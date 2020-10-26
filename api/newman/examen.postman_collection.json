@@ -44,17 +44,48 @@
 			"response": []
 		},
 		{
-			"name": "TestRamdomName",
+			"name": "TestRamdomNameLogin",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"id": "06d8b933-4654-473d-ab75-cfe559f3ef90",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
+							"pm.test(\"Verify login request\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).eql(\"Please login first\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/randomName",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"randomName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestRamdomNameAuth",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6c5195a0-b222-4572-ad1a-08f9a89d65a4",
+						"exec": [
 							"pm.test(\"Verify name is not empty\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.name).not.empty;",
@@ -102,10 +133,6 @@
 					"script": {
 						"id": "8c3a60e4-bc26-4e30-af41-0fe1de1b508e",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
 							"pm.test(\"Verify Same Name\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.name).to.eql(\"Jhon Cena\");",
@@ -142,10 +169,45 @@
 					"script": {
 						"id": "d512fd56-46c6-413b-ac38-9e2f83e6403b",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
+							"pm.test(\"Verify name was not provided\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.message).to.eql(\"Name was not provided\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/updateName",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"updateName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestUpdateNamewithBody",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f74aca14-3469-4d39-ad20-d3ca020eee14",
+						"exec": [
 							"pm.test(\"Verify Update name\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.name).to.eql(\"Hola Kane\");",
