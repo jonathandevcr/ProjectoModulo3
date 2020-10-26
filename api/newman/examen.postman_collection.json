@@ -55,7 +55,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Your test name\", function () {",
+							"pm.test(\"Verify name is not empty\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.name).not.empty;",
 							"});"
@@ -106,7 +106,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"",
-							"pm.test(\"Your test name\", function () {",
+							"pm.test(\"Verify Same Name\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.name).to.eql(\"Jhon Cena\");",
 							"});"
@@ -136,12 +136,34 @@
 		},
 		{
 			"name": "TestUpdateName",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d512fd56-46c6-413b-ac38-9e2f83e6403b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Verify Update name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.name).to.eql(\"Hola Kane\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"John Cena\"\n}"
+					"raw": "{\n    \"name\": \"Kane\"\n}"
 				},
 				"url": {
 					"raw": "{{base_url}}/updateName",
