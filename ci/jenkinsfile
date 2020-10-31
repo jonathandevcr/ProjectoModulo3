@@ -1,17 +1,14 @@
 pipeline {
     agent any
     stages {
-        /*stage('Newman Tests') {
+        stage('Newman Tests') {
             steps {
                 sh '''
                 cd api/newman
                 newman run examen.postman_collection.json -e heroku.postman_environment.json
-                
-                cd ../
-                cd ../
                 '''
             }
-        }*/
+        }
 
         stage('Jmeter Tests') {
             steps {
