@@ -15,7 +15,7 @@ pipeline {
         stage('Jmeter Tests') {
             steps {
                 sh '''
-                cd ProjectoModulo3-main/load/jmeter
+                cd load/
                 jmeter -n -t proyecto_modulo3_testplan.jmx
                 '''
             }
