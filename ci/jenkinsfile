@@ -6,8 +6,8 @@ pipeline {
                 sh '''
                 cd api/newman
                 newman run examen.postman_collection.json -e heroku.postman_environment.json
-                cd
-                cd
+                cd ../
+                cd ../
                 '''
             }
         }
@@ -16,8 +16,8 @@ pipeline {
                 sh '''
                 cd load/jmeter
                 jmeter -n -t proyecto_modulo3_testplan.jmx
-                cd
-                cd
+                cd ../
+                cd ../
                 '''
             }
         }
