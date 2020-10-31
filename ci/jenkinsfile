@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Newman Tests') {
+     /*   stage('Newman Tests') {
             steps {
                 sh '''
                 cd api/newman
@@ -11,7 +11,8 @@ pipeline {
                 cd ../
                 '''
             }
-        }
+        } */
+
         stage('Jmeter Tests') {
             steps {
                 sh '''
