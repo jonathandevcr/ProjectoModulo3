@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,27 @@
                     <div class="method-list-content passed suite-localhost">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="PingTests" hash-for-method="Ping_Test">Ping_Test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="ProyectoModulo3" hash-for-method="GetRandomNameAuthTest">GetRandomNameAuthTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="ProyectoModulo3" hash-for-method="GetRandomNamewnAuthTest">GetRandomNamewnAuthTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="ProyectoModulo3" hash-for-method="PutNameTest">PutNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="ProyectoModulo3" hash-for-method="SameNameTest">SameNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-localhost" title="ProyectoModulo3" hash-for-method="StatusTest">StatusTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-localhost -->
@@ -120,14 +140,42 @@
           <div class="suite-localhost-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">PingTests</span>
+              <span class="class-name">ProyectoModulo3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Ping_Test">
-                  </a> <!-- Ping_Test -->
-                  <span class="method-name">Ping_Test</span>
+                  <a name="GetRandomNameAuthTest">
+                  </a> <!-- GetRandomNameAuthTest -->
+                  <span class="method-name">GetRandomNameAuthTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetRandomNamewnAuthTest">
+                  </a> <!-- GetRandomNamewnAuthTest -->
+                  <span class="method-name">GetRandomNamewnAuthTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PutNameTest">
+                  </a> <!-- PutNameTest -->
+                  <span class="method-name">PutNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SameNameTest">
+                  </a> <!-- SameNameTest -->
+                  <span class="method-name">SameNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="StatusTest">
+                  </a> <!-- StatusTest -->
+                  <span class="method-name">StatusTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,10 +190,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;localhost&quot;&gt;
-  &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://api-coffee-testing.herokuapp.com/&quot;/&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://api-coffee-testing.herokuapp.com/v1/examen/&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;PingTests&quot;/&gt;
+      &lt;class name=&quot;ProyectoModulo3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- localhost --&gt;
@@ -185,16 +233,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Ping_Test')
-data.setCell(0, 2, 'PingTests')
-data.setCell(0, 3, 4164);
+data.setCell(0, 1, 'GetRandomNameAuthTest')
+data.setCell(0, 2, 'ProyectoModulo3')
+data.setCell(0, 3, 9173);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SameNameTest')
+data.setCell(1, 2, 'ProyectoModulo3')
+data.setCell(1, 3, 1158);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetRandomNamewnAuthTest')
+data.setCell(2, 2, 'ProyectoModulo3')
+data.setCell(2, 3, 662);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PutNameTest')
+data.setCell(3, 2, 'ProyectoModulo3')
+data.setCell(3, 3, 571);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'StatusTest')
+data.setCell(4, 2, 'ProyectoModulo3')
+data.setCell(4, 3, 530);
 window.suiteTableData['localhost']= { tableData: data, tableDiv: 'times-div-localhost'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-localhost">
               </div> <!-- times-div-localhost -->
             </div> <!-- times-div -->
@@ -220,18 +284,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">PingTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ProyectoModulo3</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">SetupRestAssured(https://api-coffee-testing.herokuapp.com/)</span>
+                <span class="method-name">SetupRestAssured(https://api-coffee-testing.herokuapp.com/v1/examen/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">593 ms</span>
+                <span class="method-start">1278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Ping_Test</span>
-                <span class="method-start">806 ms</span>
+                <span class="method-name">GetRandomNameAuthTest</span>
+                <span class="method-start">1589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">10771 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetRandomNamewnAuthTest</span>
+                <span class="method-start">10772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">11436 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PutNameTest</span>
+                <span class="method-start">11437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">12009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SameNameTest</span>
+                <span class="method-start">12011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">13174 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">StatusTest</span>
+                <span class="method-start">13176 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

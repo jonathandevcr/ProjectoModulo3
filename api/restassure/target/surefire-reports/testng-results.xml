@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="localhost" duration-ms="5005" started-at="2020-11-02T20:06:42 CST" finished-at="2020-11-02T20:06:47 CST">
+  <suite name="localhost" duration-ms="13742" started-at="2020-11-02T22:12:51 CST" finished-at="2020-11-02T22:13:04 CST">
     <groups>
     </groups>
-    <test name="Regression" duration-ms="5005" started-at="2020-11-02T20:06:42 CST" finished-at="2020-11-02T20:06:47 CST">
-      <class name="PingTests">
-        <test-method status="PASS" signature="SetupRestAssured(java.lang.String)[pri:0, instance:PingTests@5cb9f472]" name="SetupRestAssured" is-config="true" duration-ms="577" started-at="2020-11-02T20:06:42 CST" finished-at="2020-11-02T20:06:43 CST">
+    <test name="Regression" duration-ms="13742" started-at="2020-11-02T22:12:51 CST" finished-at="2020-11-02T22:13:04 CST">
+      <class name="ProyectoModulo3">
+        <test-method status="PASS" signature="SetupRestAssured(java.lang.String)[pri:0, instance:ProyectoModulo3@1ed4004b]" name="SetupRestAssured" is-config="true" duration-ms="1238" started-at="2020-11-02T22:12:51 CST" finished-at="2020-11-02T22:12:52 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://api-coffee-testing.herokuapp.com/]]>
+                <![CDATA[https://api-coffee-testing.herokuapp.com/v1/examen/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupRestAssured -->
-        <test-method status="PASS" signature="before()[pri:0, instance:PingTests@5cb9f472]" name="before" is-config="true" duration-ms="212" started-at="2020-11-02T20:06:43 CST" finished-at="2020-11-02T20:06:43 CST">
+        <test-method status="PASS" signature="before()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="before" is-config="true" duration-ms="310" started-at="2020-11-02T22:12:52 CST" finished-at="2020-11-02T22:12:52 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="Ping_Test()[pri:0, instance:PingTests@5cb9f472]" name="Ping_Test" duration-ms="4164" started-at="2020-11-02T20:06:43 CST" finished-at="2020-11-02T20:06:47 CST">
+        <test-method status="PASS" signature="GetRandomNameAuthTest()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="GetRandomNameAuthTest" duration-ms="9173" started-at="2020-11-02T22:12:52 CST" finished-at="2020-11-02T22:13:01 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Ping_Test -->
-      </class> <!-- PingTests -->
+        </test-method> <!-- GetRandomNameAuthTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="before" is-config="true" duration-ms="1" started-at="2020-11-02T22:13:01 CST" finished-at="2020-11-02T22:13:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="GetRandomNamewnAuthTest()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="GetRandomNamewnAuthTest" duration-ms="662" started-at="2020-11-02T22:13:01 CST" finished-at="2020-11-02T22:13:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRandomNamewnAuthTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="before" is-config="true" duration-ms="1" started-at="2020-11-02T22:13:02 CST" finished-at="2020-11-02T22:13:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="PutNameTest()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="PutNameTest" duration-ms="571" started-at="2020-11-02T22:13:02 CST" finished-at="2020-11-02T22:13:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutNameTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="before" is-config="true" duration-ms="2" started-at="2020-11-02T22:13:03 CST" finished-at="2020-11-02T22:13:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="SameNameTest()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="SameNameTest" duration-ms="1158" started-at="2020-11-02T22:13:03 CST" finished-at="2020-11-02T22:13:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SameNameTest -->
+        <test-method status="PASS" signature="before()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="before" is-config="true" duration-ms="2" started-at="2020-11-02T22:13:04 CST" finished-at="2020-11-02T22:13:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="StatusTest()[pri:0, instance:ProyectoModulo3@1ed4004b]" name="StatusTest" duration-ms="530" started-at="2020-11-02T22:13:04 CST" finished-at="2020-11-02T22:13:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StatusTest -->
+      </class> <!-- ProyectoModulo3 -->
     </test> <!-- Regression -->
   </suite> <!-- localhost -->
 </testng-results>
